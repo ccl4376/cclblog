@@ -1,0 +1,1 @@
+{% extends 'layouts/base.html' %}{% block title %}{{ article.name }} - {{ block.super }}{% endblock title %}{% block content %}<center><h1>{{ article.name }}</h1><p>{{ article.description }}</p>{% for upload in uploads %}<img src="{{ upload.image.url }}" alt="" />{% endfor %}</center>{% endblock content %}

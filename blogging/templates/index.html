@@ -1,0 +1,1 @@
+{% extends 'layouts/base.html' %}{% block title %}Homepage - {{ block.super }}{% endblock title %}{% block content %}<center>{% for blog in blogs %}<h2><a href="{% url 'blog_detail' slug=blog.slug %}">{{ blog.name }}</a></h2><p>{{ blog.description }}</p>{% endfor %}</center>{% endblock content %}
